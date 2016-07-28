@@ -25,7 +25,7 @@ namespace CustomWebHooksReceiver.Controllers
                 var json = JsonConvert.SerializeObject(dadosInscricao);
                 request.AddParameter("text/json", json, ParameterType.RequestBody);
                 request.AddCookie(".AspNet.ApplicationCookie",
-                    "5hxbdSZhPkzpwHvO6GlFECAPX2X9N-ddHCGTOqbaLP_6riAmTu__yPA08Mg6f0jdTxy9pxvvxjb4_E9Lr-YwBWBt9cZ5bEBo1PuH9_S1opqNaXXWULFWs6oT8jfv2bFI7RTJhlErrj2kkrirOoQl41jfthq4jiKt32g8J7YwVMo9UbGHXOueojY2nAoQkInmSQavUiI3Pbea_WugkyjBa_JW2gaMDPWm44-xWmxChPjFrARP7SQ1r0ZbbiemuzyYhaDTzS3t8BnaDtD8BH207svyTEtYhGDHWOMwK_V_JVujkJlzBb_qaXMwacfsBhYzbLC5UroYyDktVCNJMveYt0b8kVvExgxYcGnmNcEN2s25Eep00jqwU0Ml16-D1AR_n1unt61WYEWdII30Ixx9JqavuyUAnbTiFQEjhuLYZ1iLbI-I2BWHjRBHnM9PoU8RnpmKKNJOEmzHJDH9_a2okgi4PfklQLAw3Z1pxnMrwvD7Ht8HxWdQYqZKcqhMeweq");
+                    "XkWqJ905SdpHj3Rv7GjuGOjrqyubnFNgME_D_k9TjTgXb8s-HIEKTGRVyqG-XAFqJrk4HQ-EootgFG11cCzbk_hFKDIintaSjkv5h6YnrQ0rT_lB7ZhnrCvVeZhC6J2M1rZUSnY_3TrN7mbn3Hc4cX9WfA9HxOhCisXuim7hgD2EEFyXik3sU99YGjuuOlIsugp_m5Bd_OD2fGJJ1lD6U-IMDsBPO_-l-uBr-JK5BrV3ALZeAPLef4JAQY2PhCYrXWVroM_7S6CHiaN-L6K0nGanzMQGWn5pA1KUpG8bMsHdpEYOO8yhlgakbGEyZyJal4MmrslCg76JhFCcSHh_8Io7SrbXLHMmW7_WUUbSg4KucSzHpX4rdAPUhIUiOuac0WKDgDVqhep4jLKMoN8SG5pgnPpqelTk7kJM2ZuqoKmGe8C72YW_gqquXqaVIqg79eXxAr01663uiLkdSIVcqrqaldWqPD1J3fwIdF-VzyqMIVNw7tugKCUANdcUFKrN");
                 var ret = client.Execute(request);
                 response = Request.CreateResponse(HttpStatusCode.OK);
             }
@@ -50,7 +50,7 @@ namespace CustomWebHooksReceiver.Controllers
                 var client = new RestClient(serviceUrl);
                 var request = new RestRequest("api/webhooks/registrations", Method.DELETE);
                 request.AddCookie(".AspNet.ApplicationCookie",
-                    "5hxbdSZhPkzpwHvO6GlFECAPX2X9N-ddHCGTOqbaLP_6riAmTu__yPA08Mg6f0jdTxy9pxvvxjb4_E9Lr-YwBWBt9cZ5bEBo1PuH9_S1opqNaXXWULFWs6oT8jfv2bFI7RTJhlErrj2kkrirOoQl41jfthq4jiKt32g8J7YwVMo9UbGHXOueojY2nAoQkInmSQavUiI3Pbea_WugkyjBa_JW2gaMDPWm44-xWmxChPjFrARP7SQ1r0ZbbiemuzyYhaDTzS3t8BnaDtD8BH207svyTEtYhGDHWOMwK_V_JVujkJlzBb_qaXMwacfsBhYzbLC5UroYyDktVCNJMveYt0b8kVvExgxYcGnmNcEN2s25Eep00jqwU0Ml16-D1AR_n1unt61WYEWdII30Ixx9JqavuyUAnbTiFQEjhuLYZ1iLbI-I2BWHjRBHnM9PoU8RnpmKKNJOEmzHJDH9_a2okgi4PfklQLAw3Z1pxnMrwvD7Ht8HxWdQYqZKcqhMeweq");
+                    "XkWqJ905SdpHj3Rv7GjuGOjrqyubnFNgME_D_k9TjTgXb8s-HIEKTGRVyqG-XAFqJrk4HQ-EootgFG11cCzbk_hFKDIintaSjkv5h6YnrQ0rT_lB7ZhnrCvVeZhC6J2M1rZUSnY_3TrN7mbn3Hc4cX9WfA9HxOhCisXuim7hgD2EEFyXik3sU99YGjuuOlIsugp_m5Bd_OD2fGJJ1lD6U-IMDsBPO_-l-uBr-JK5BrV3ALZeAPLef4JAQY2PhCYrXWVroM_7S6CHiaN-L6K0nGanzMQGWn5pA1KUpG8bMsHdpEYOO8yhlgakbGEyZyJal4MmrslCg76JhFCcSHh_8Io7SrbXLHMmW7_WUUbSg4KucSzHpX4rdAPUhIUiOuac0WKDgDVqhep4jLKMoN8SG5pgnPpqelTk7kJM2ZuqoKmGe8C72YW_gqquXqaVIqg79eXxAr01663uiLkdSIVcqrqaldWqPD1J3fwIdF-VzyqMIVNw7tugKCUANdcUFKrN");
                 var ret = client.Execute(request);
                 response = Request.CreateResponse(HttpStatusCode.OK);
             }
